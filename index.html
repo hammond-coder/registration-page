@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        background-image: url(images/bg-intro-desktop.png),linear-gradient(hsl(0, 100%, 74%), hsl(0, 100%, 74%));
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    main{
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem auto;
+    }
+
+    .col-1{
+        align-self: center;
+        color: #ffffff;
+        margin:auto 2rem auto 5rem;
+    }
+    
+    .col-2{
+        margin:0 5rem;
+    }
+    .try-it-free{
+        background-color: hsl(248, 32%, 49%);
+        width:30rem;
+        padding:1rem;
+        text-align: center;
+        margin:2rem 0;
+        border-radius: 10px;
+        color:#ffffff;
+    }
+    form{
+        background: #ffffff;
+        width:30rem;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2rem;
+    }
+    form input{
+       height: 3.2rem;
+       margin: 1em 0; 
+       border:1px solid hsl(246, 25%, 77%);
+       border-radius: 10px;
+       outline: none;
+       font-family: 'Poppins', Helvetica;
+       font-weight: 600;
+    }
+    form p {
+        font-size: 12px;
+    }
+    ::placeholder{
+        color: grey;
+        padding-left: 0.3rem;
+    }
+    input[type=submit]{
+        width:23rem;
+        background-color:hsl(154, 59%, 51%);
+        color:#ffffff;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    input[type=submit]:hover{
+        cursor: pointer;
+    }
+    input:valid{
+        border-color:hsl(246, 25%, 77%);
+    }
+    input:invalid{
+        border-color:hsl(0, 100%, 74%);
+    }
+
+    @media screen and (max-width:400px){
+        main{
+        flex-wrap: wrap;
+        margin: 3rem auto;
+        text-align: center;
+    }
+    .try-it-free{
+        width:18rem;
+        text-align: center;
+        margin: 3rem auto 1rem auto;
+    }
+    .col-1{
+        margin:0;
+    }
+    .col-2{
+        margin: 0;
+    }
+    form{
+        width:18rem;
+        margin:0;
+    }
+    form input{
+        width: 15rem;
+    }
+    input[type=submit]{
+        width:15rem;
+    } 
+    }
+
+    @media screen and (min-width:401px)and (max-width:1024px){
+    main{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .try-it-free{
+        width:24rem;
+        text-align: center;
+        margin: 3rem auto;
+    }
+    .col-1{
+        margin:0;
+    }
+    .col-1 h1{
+        margin:auto 0.5rem;
+    }
+    .col-2{
+        margin: 0;
+    }
+    form{
+        width:24rem;
+        margin:0;
+    }
+    form input{
+        width: 20rem;
+    }
+    input[type=submit]{
+        width:20rem;
+    }
+}
+</style>
+
+</head>
+</html>
+
+<body>
+
+<main>
+    <div class="col-1">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but 
+            understanding how developers think is invaluable.</p>
+    </div>
+    <div class="col-2">
+        <div class="form-wrapper">
+
+        <div class="try-it-free">
+        <p><strong>Try it free 7 days</strong> then $20/mo thereafter</p>
+    </div>
+        <form action="" method="POST">
+           
+            <input type="text" name="firstname" placeholder="First Name" size="50" data-error="First Name cannot be empty" required> <br>
+             
+            <input type="text" name="lastname" placeholder="Last Name" size="50" required>  <br>
+
+            <input type="email" name="email" placeholder="Enter your email" size="50" required> <br>
+            
+            <input type="password" name="password" placeholder="Enter your password" size="50" min="8" required> <br>  
+        
+            <input type="submit" name="Claim your free trial" label for="Claim your free trial" value="Claim your free trial">
+
+            <p style="color:hsl(246, 25%, 77%)">By clicking the button, you are agreeing to our  <a href="#" style="color:hsl(0, 100%, 74%); text-decoration: none;font-weight: 600;">Terms and Services</a></p>
+        </form>
+
+    </div>
+</div>
+</main>
+
+</body>
